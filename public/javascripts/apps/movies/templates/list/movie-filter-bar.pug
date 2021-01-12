@@ -1,0 +1,32 @@
+h3 BROWSE
+form(role="search" action="/api/movies")
+  label(for="search") Search by title
+  .input-group.add-on
+    input#search.form-control(type="text" placeholder="movie title" name="title")
+    .input-group-btn
+      button#look-up.btn.btn-default(type="submit")
+        i.glyphicon.glyphicon-search
+  hr(width="100%")
+form#filter-form
+  label Genre:
+  select#genre-input.form-control(name="genre" multiple size=7)
+    option(value="popular") Popular
+    option(value="action") Action
+    option(value="adventure") Adventure
+    option(value="animation") Animation
+    option(value="comedy") Comedy
+    option(value="drama") Drama
+    option(value="horror") Horror
+  br
+  .form-group
+    label(for="sort") Sort By:
+    select#sort-input.form-control(name="sort")
+      option(value="popularity" selected) Popularity
+      option(value="year") Release Year
+      option(value="title") Title
+  .form-group
+    label(for="release-year") Release Year:
+    input#release-year.form-control(name="releaseYear" type="number" min="1980" max="2017")
+  .btn-group
+    input#filter.btn.btn-primary(type="submit" value="Filter")
+    input#clear.btn.btn-default(type="reset" value="Clear")

@@ -1,0 +1,8 @@
+.box.thumbnail
+  .photo
+    img#cover-img.img-responsive(src=cover?cover.url:'/images/default.jpg' alt="cover photo")
+    input#cover-input(type="file" name="cover" style="display:none")
+    span.notice
+      h5 click to select
+  .caption
+    h5#title Movie Title

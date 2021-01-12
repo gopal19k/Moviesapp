@@ -1,0 +1,62 @@
+.panel.panel-simple
+  .panel-heading.clearfix
+    h4#title.panel-title.pull-left: strong
+    .btn-group.pull-right
+      a(href="#").btn.btn-primary Watch Movie
+      a(href="#").btn.btn-default Watch Trailer
+  .panel-body
+    #movie-info
+      #movie-overview
+        h4 Overview
+        p= overview
+      table.table
+        thead
+          tr: th(colspan=2) Movie Information
+        tbody
+          tr
+            td Genre
+            td= genre
+          tr
+            td Release Date
+            td#release-date
+          tr
+            td Running Time
+            td= runningTime
+          tr
+            td Director
+            td= director
+          tr
+            td Country
+            td= country
+          tr
+            td Language
+            td= language
+          tr
+            td Budget
+            td= budget
+          tr
+            td Box Office
+            td= boxOffice
+.panel.panel-simple
+  .panel-heading Starring
+  .panel-body
+    table.table.table-striped
+      thead
+        tr
+          th Picture
+          th Actor Name
+          th Character Name
+      tbody.starring-list-container
+.panel.panel-simple
+  .panel-heading Cast
+  .panel-body
+    table.table.tabel-striped
+      thead
+        tr
+          th Picture
+          th Actor Name
+          th Character Name
+      tbody.cast-list-container
+  .panel-footer.clearfix
+    .panel-buttons
+      button#goback.btn.btn-default Go Back

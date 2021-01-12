@@ -1,0 +1,64 @@
+.panel.panel-simple
+  .panel-heading
+    .panel-title Movie Info
+  .panel-body
+    form.form-horizontal
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="title") Title
+        .col-xs-6.col-sm-9.col-md-11
+          input#title-input.form-control(type="text" placeholder="Movie Title" value=title)
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="overview") Overview
+        .col-xs-6.col-sm-9.col-md-11
+          textarea#overview-input.form-control(rows="4" cols="50" placeholder="Movie Story..." value=overview)
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="type") Genre
+        .col-xs-6.col-sm-9.col-md-11
+          select#genre-input.form-control
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="releaseDate") Release Date
+        .col-xs-6.col-sm-9.col-md-11
+          input#releaseDate-input.form-control(type="text" placeholder="MM/DD/YYYY")
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="runningTime") Running Time
+        .col-xs-6.col-sm-9.col-md-11
+          .input-group
+            input#runningTime-input.form-control(type="number" max="200" min="30")
+            span.input-group-addon minutes
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="director") Director
+        .col-xs-6.col-sm-9.col-md-11
+          input#director-input.form-control(type="text")
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="country") Country
+        .col-xs-6.col-sm-9.col-md-11
+          select#country-input.form-control
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="language") Language
+        .col-xs-6.col-sm-9.col-md-11
+          select#language-input.form-control
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="budget") Budget
+        .col-xs-6.col-sm-9.col-md-11
+          .input-group
+            span.input-group-addon $
+            input#budget-input.form-control(type="number")
+            span.input-group-addon .00
+      .form-group
+        label.control-label.col-xs-6.col-sm-3.col-md-1(for="boxOffice") Box Office
+        .col-xs-6.col-sm-9.col-md-11
+          .input-group
+            span.input-group-addon $
+            input#boxOffice-input.form-control(type="number")
+            span.input-group-addon .00
+.panel.panel-simple
+  .panel-heading
+    .panel-title
+    | Cast
+    button#new-actor.btn.btn-primary.btn-sm.pull-right NEW
+  .panel-body
+    form#movie-cast-container.form-horizontal
+  .panel-footer.clearfix
+    .panel-buttons
+      button#cancel.btn.btn-default Cancel
+      button#save.btn.btn-success Save

@@ -1,0 +1,11 @@
+- var src = cover&&cover.url?cover.url:'/images/default.jpg';
+td: img.img-responsive(width="55px" height="90px" src=src)
+td= title
+td#created-at
+td#updated-at
+td= meta.watches
+td= meta.likes
+td
+  div.btn-group
+    button#edit.btn.btn-primary Edit
+    button#delete.btn.btn-default Delete

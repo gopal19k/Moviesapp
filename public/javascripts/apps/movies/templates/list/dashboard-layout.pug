@@ -1,0 +1,23 @@
+.dashboard-navbar
+#filter-bar.dashboard-filter-bar
+.col-xs-9
+  #search-box
+    form
+      .input-group.add-on
+        input#search.form-control(type="text" placeholder="movie title" name="filter")
+        .input-group-btn
+          button.btn.btn-default(type="submit")
+            i.glyphicon.glyphicon-search
+  table#admin-movies-list.table.table-striped.table-bordered
+    thead
+      tr
+        th Picture
+        th Title
+        th Date Created
+        th Last Time Updated
+        th Total Wacthes
+        th Likes
+        th Action
+    tbody.dashboard-view
+.footer.text-muted.navbar.navbar-inverse.navbar-fixed-bottom © 2015.
+  a(href="https://twitter.com/bigfanjs" target="_blank") Adel Jojo

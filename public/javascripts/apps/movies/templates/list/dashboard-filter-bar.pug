@@ -1,0 +1,36 @@
+div.col-xs-3.well
+  form(role="search")
+    div.form-group
+      label(for="type") Time
+      select.form-control
+        option(value="8.64e+7") last day
+        option(value="6.048e+8") last weak
+        option(value="2.628e+9") last month
+        option(value="3.154e+10") last year
+        option(value="all") all time
+    hr(width="100%")
+    div.form-group
+      .form-check
+        label.form-check-label
+          input.form-check-input(type="checkbox" value="unliked")
+          |  Unliked Movies
+      .form-check
+        label.form-check-label
+          input.form-check-input(type="checkbox" value="unwatched")
+          |  Unwatched Movies
+      .form-check
+        label.form-check-label
+          input.form-check-input(type="checkbox" value="disliked")
+          |  Disliked Movies
+    hr(width="100%")
+    div.form-group
+      label(for="order") Sort by
+      select.form-control
+        option(value="mostWatched" disabled) Top Watched
+        option(value="mostWatched" disabled) Top Liked
+        option(value="mostWatched" disabled) Top Disliked
+        option(value="oldest") Oldest
+        option(value="newest") Newest
+    div.btn-group
+      button#filter.btn.btn-primary(type="submit") Filter
+      button#clear.btn.btn-default Clear
